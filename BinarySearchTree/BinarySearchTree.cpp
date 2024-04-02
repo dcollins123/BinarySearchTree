@@ -234,6 +234,7 @@ void BinarySearchTree::inOrder(Node* node) {
         inOrder(node->right);
     }
 }
+
 void BinarySearchTree::postOrder(Node* node) {
       // FixMe (10): Pre order root
       //if node is not equal to null ptr
