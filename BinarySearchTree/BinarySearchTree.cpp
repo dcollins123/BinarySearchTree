@@ -65,8 +65,8 @@ private:
 
     void addNode(Node* node, Bid bid);
     void inOrder(Node* node);
-    void postOrder(Node* node);
-    void preOrder(Node* node);
+    void postOrder(Node* node);                 // Declaring member function
+    void preOrder(Node* node);                  // Declaring member function
     Node* removeNode(Node* node, string bidId);
 
 public:
@@ -75,8 +75,8 @@ public:
     void InOrder();
     void Insert(Bid bid);
     void Remove(string bidId);
-    void PostOrder();
-    void PreOrder();
+    void PostOrder();                           // Declaring member function
+    void PreOrder();                            // Declaring member function
     Bid Search(string bidId);
     
 };
@@ -220,7 +220,7 @@ void BinarySearchTree::addNode(Node* node, Bid bid) {
     }
 }
 
-void displayBid(Bid bid);
+void displayBid(Bid bid);          // Needed to add because it was being called before its def
 
 void BinarySearchTree::inOrder(Node* node) {
       // FixMe (9): Pre order root
